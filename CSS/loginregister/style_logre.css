@@ -1,0 +1,110 @@
+video#savideo{
+    position: fixed;
+    right: 0; 
+    bottom: -25px;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.switch span{
+    color:#ccc;
+    font-size: 24px; 
+    cursor: pointer;
+}
+
+.switch span.active{
+    color: #398983;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0,0,0,.7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+form .input{
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    height: 32px;
+    margin: 45px 0;
+    transform: .4s;
+}
+
+.input input{
+    outline: none;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(256,256,256);
+    background: transparent;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.input::after{
+    content: attr(placeholder);
+    position: absolute;
+    left: 0;
+    top: -20%;
+    font-size: 18px;
+    color: #fff;
+    transition: .3s;
+}
+
+.input.focus::after{
+    top:-70%;
+    font-size: 16px;
+    color: #398983;
+}
+
+.signin .input#email,
+.signin .input#repeat{
+    display:none;
+    margin: 0;
+    height: 0;
+    opacity: 0;
+}
+
+form span{
+    display:block;
+    color: #398983;;
+    font-size: 12.8px;
+    cursor: pointer;
+}
+
+form button{
+    border: none;
+    outline: none;
+    margin: 32px 0 0;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background:linear-gradient(90deg,#398983,#5da095);
+    box-shadow: 0 0 8px rgba(0,0,0,.5);
+    cursor: pointer;
+    color: aliceblue;
+}
+
+@media (max-width: 1350px) {
+  video#savideo{
+    position: fixed;
+    right: 0; 
+    bottom: -20px;
+    width: auto;
+    height: auto;
+    }
+}
+
