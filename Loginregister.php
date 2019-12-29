@@ -121,7 +121,7 @@
                     <div id='password' class="input" placeholder='Password'><input type="text" name="password"></div>
                     <div id='repeat' class="input" placeholder='Repeat'><input type="text" name="repeat"></div>
                     <span>Forget?</span>
-                    <button type="submit" name="signin">Login</button>
+                    <button type="submit" name="signin">Submit</button>
                 </form>
 
             </div>
