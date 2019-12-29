@@ -17,9 +17,11 @@
                     <span class="navbar-toggler-icon" style="height: 30px; width: 30px;"></span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-left">
-                    <button class="dropdown-item" type="button">Homepage</button>
-                    <button class="dropdown-item" type="button">Movie introduction</button>
-                    <button class="dropdown-item" type="button">Shop</button>
+                    <a class="dropdown-item" type="button" href="homepage.php">Homepage</a>
+                    <a class="dropdown-item" type="button" href="Miyazaki Hayao.php">Miyazaki Hayao</a>
+                    <a class="dropdown-item" type="button" href="PrincessMononoke.php">Princess Mononoke</a>
+                    <a class="dropdown-item" type="button" href="SpiritAway.php">Spirited Away</a>
+                    <a class="dropdown-item" type="button" href="surroundings.php">Shop</a>
                 </div>
             </div>
             <a href="#" style="margin-top: 1%;"><img src="Resource/Photo/jct/logo5.png"></a>
@@ -29,9 +31,9 @@
                     <img class="button" style="width: 80px;"src="Resource/Photo/jct/27.jpg">
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <button class="dropdown-item" type="button">Login</button>
-                    <button class="dropdown-item" type="button">Shopping cart</button>
-                    <button class="dropdown-item" type="button">Log out</button>
+                    <a class="dropdown-item" type="button" href="homepage.php">Log in</a>
+                    <a class="dropdown-item" type="button" href="Miyazaki Hayao.php">Log out</a>
+                    <a class="dropdown-item" type="button" href="surroundings.php">My Profile</a>
                 </div>
             </div>
 
@@ -162,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" style="margin-top: 10%">
                 <p style="font-size: 64px;color: white; font-weight: bold;font-family: Crimson Text; margin-top: 7%;">Future Activity</p>
                 <ol class="carousel-indicators">
