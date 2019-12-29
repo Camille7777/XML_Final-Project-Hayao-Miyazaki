@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<user>
+  <name>Harry</name>
+  <email>Harry@email.com</email>
+  <country>China</country>
+  <age>18</age>
+  <address>China</address>
+  <balance>4000</balance>
+  <password>000000</password>
+</user>

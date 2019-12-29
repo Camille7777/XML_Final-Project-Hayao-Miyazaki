@@ -15,7 +15,7 @@ if (isset($_POST['edit_psw']))
     if(isset($_POST['username']))
     {    
         $userName = $_POST['username'];    
-        if (file_exists('./XML/User/'.$username))
+        if (file_exists('./XML/User/'.$userName))
         {
             $xml->load('./XML/User/'.$userName.'/user.xml');
             $old_psw = $xml->getElementsByTagName('password')->item(0);
@@ -93,14 +93,20 @@ if (isset($_POST['edit_psw']))
 </style>
 
 <body class="body-bg-color">
-    <div class="pos-f-t">
-        <nav>
-            <div class="btn">
-                Back
-            </div>
+        <div class="pos-f-t">
+            <nav class="navbar navbar-dark">
+                <div class="btn-group" style="height: 80px;">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style="background-color: #FFC408">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item" type="button" href="User Profile.php">Back</a>
+                    </div>
+                </div>
 
-        </nav>
-    </div>
+            </nav>
+        </div>
+		
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-6 shadow bg-A5DEE4 p-3" style="font-weight:700;">

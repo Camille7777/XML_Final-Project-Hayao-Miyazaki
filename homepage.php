@@ -1,5 +1,5 @@
 <?php
-session_start();
+	session_start();
 ?>
 <html>
 
@@ -45,19 +45,32 @@ session_start();
                 <a class="dropdown-item" type="button" href="surroundings.php">Shop</a>
             </div>
         </div>
-        <a href="#" style="margin-top: 1%;"><img src="Resource/Photo/jct/logo5.png"></a>
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static"
-                aria-haspopup="true" aria-expanded="false" style="background-color: #A8D8B9">
-                <span>TonyJct</span><span>&nbsp;&nbsp;</span>
-                <img class="button" style="width: 80px;" src="Resource/Photo/jct/27.jpg">
-            </button>
-            <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" type="button" href="homepage.php">Log in</a>
-                <a class="dropdown-item" type="button" href="Miyazaki Hayao.php">Log out</a>
-                <a class="dropdown-item" type="button" href="surroundings.php">My Profile</a>
+		
+		<a href="#" style="margin-top: 1%;"><img src="Resource/Photo/jct/logo2%20(1).png"></a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                    data-display="static" aria-haspopup="true" aria-expanded="false" style="background-color: #A8D8B9">
+                    <span>
+						<?php
+							if(isset($_SESSION['username']))
+							{
+								$username = $_SESSION['username'];
+								echo $username;
+							}
+							else
+							{
+								echo "You have not log in";
+							}
+						?>
+					</span><span>&nbsp;&nbsp;</span>
+                    <img class="button" style="width: 80px;" src="Resource/Photo/jct/27.jpg">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" type="button" href="User Profile.php">My profile</a>
+                    <a class="dropdown-item" type="button" href="Loginregister.php">Log in</a>
+                    <a class="dropdown-item" type="button" <?php session_destroy()?> href="homepage.php">Log out</a>
+                </div>
             </div>
-        </div>
 
     </nav>
 
