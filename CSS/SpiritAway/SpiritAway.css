@@ -170,5 +170,17 @@
   transform: scale(1.1); 
 }
 
+.footer-box {
 
+    padding: 0 0;
+    background-color: rgba(189, 192, 186, 0.3);
+}
+
+.textbottom {
+    font-family: Cinzel Decorative;
+    color: white;
+    font-size: auto;
+    font-weight: 800;
+    letter-spacing: 8px;
+    }
 	
