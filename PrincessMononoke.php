@@ -1,8 +1,20 @@
 <?php
-	session_start();
+    session_start();
+    $_SESSION['cur_page'] = basename(__FILE__);
+	if(isset($_SESSION['alerted']))
+	{
+		if($_SESSION['alerted'])
+		{
+			if (isset($_SESSION['message']))
+			{
+				$message = $_SESSION['message'];
+				echo "<script type='text/javascript'>alert('$message');</script>";
+			}
+			$_SESSION['alerted'] = 0;
+		}
+    }
 ?>
 <html>
-
 <head>
     <title>Princess Mononoke</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">

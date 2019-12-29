@@ -1,18 +1,24 @@
 <?php
     $erros=array();
+    
     if (isset($_POST['signin']))
     {
         
-        $username = preg_replace('/[^A-Za-z]/', '', $_POST['username']);
-        $password = $_POST['password'];
+            $username = preg_replace('/[^A-Za-z]/', '', $_POST['username']);
+        
+            $password = $_POST['password'];
         if(file_exists('./XML/User/'.$username)){
             $xml = new SimpleXMLElement('./XML/User/'.$username.'/user.xml', 0, true); // getthe user.xml file
             
             if($password == $xml->password){  // if the password correct
-                session_start();                //
-                $_SESSION['username'] = $username;    //user's session start
-				//$filepath = $_SESSION['filepath'];
-                //header('Location:'. $filepath.'.php');     // open index.php
+                session_start();                ////user's session start
+                $_SESSION['username'] = $username;
+                $message = $username.',you have successfully logged in !';
+                $_SESSION['message'] = $message;
+                $_SESSION['alerted'] = 1;
+                header('Location: User Profile.php');
+                
+                
                 die;
             }
             else
@@ -28,6 +34,7 @@
             echo "<script type='text/javascript'>alert('$message');</script>";
         }
     }
+    
     
     if (isset($_POST['register']))
     {
@@ -68,12 +75,6 @@
             
                 echo "<script type='text/javascript'>alert('$message');</script>";
             }
-            if(!mkdir('./XML/User/'.$username.'/Comment'))
-            {
-                $message = "$username/Comment has not been created";
-            
-                echo "<script type='text/javascript'>alert('$message');</script>";
-            }
             
             $xml = new SimpleXMLElement('<user></user>');
             $xml->addChild('name', $username);
@@ -84,7 +85,10 @@
             $xml->addChild('balance', '4000');  // in xml 
             $xml->addChild('password', $password);    // add password to xml
             $xml->asXML('./XML/User/'.$username.'/user.xml');   // save as xml file 
-            header('Location: Loginregister.php');                // go to login
+            $message = $username.', you have sucessfully register';
+            $_SESSION['message'] = $message;
+            $_SESSION['alerted'] = 1;
+            header('Location: User Profile.php');                // go to login
             die;
         }
 

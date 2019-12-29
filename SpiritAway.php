@@ -1,3 +1,19 @@
+<?php
+session_start();
+if(isset($_SESSION['alerted']))
+	{
+		if($_SESSION['alerted'])
+		{
+			if (isset($_SESSION['message']))
+			{
+				$message = $_SESSION['message'];
+				echo "<script type='text/javascript'>alert('$message');</script>";
+			}
+			$_SESSION['alerted'] = 0;
+		}
+	}
+	$_SESSION['cur_page'] = basename(__FILE__);
+?>
 <html>
 	<head>
 		<title>Spirited Away</title>
@@ -269,7 +285,7 @@
 				  myFunction_all(this,i);
 				}
 			  };
-			  xhttp.open("GET", "XML/Comment/PageComment/PMcomment.xml", true);
+			  xhttp.open("GET", "XML/Comment/PageComment/SAcomment.xml", true);
 			  xhttp.send();
 			}
 
@@ -280,7 +296,7 @@
 				  myFunction_less(this,i);
 				}
 			  };
-			  xhttp.open("GET", "XML/Comment/PageComment/PMcomment.xml", true);
+			  xhttp.open("GET", "XML/Comment/PageComment/SAcomment.xml", true);
 			  xhttp.send();
 			}
 

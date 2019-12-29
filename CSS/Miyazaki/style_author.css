@@ -5,11 +5,19 @@ body{
     background: #333
 }
 
-*{
+*:not(html):not(body):not(a) {
 		padding:10px;
 		margin:0;
 }
 
+a {
+  background-color: none;
+  display: block;
+  box-shadow: none;
+}
+a:hover {
+  
+}
 #topimg h1{
     font-size: 200px;
     text-transform: uppercase;

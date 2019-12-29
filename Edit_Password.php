@@ -109,7 +109,7 @@ if (isset($_POST['edit_psw']))
 
                     <label for="n_psw">New Password</label>
                     <input type="password" class="form-control" name="n_psw" id="n_psw">
-                    <div class="">
+                    <div class="mt-3">
                         <button type="submit" name="edit_psw" class="btn btn-color shadow ">Submit</button>
                     </div>
                 </form>
