@@ -259,7 +259,7 @@ if(isset($_SESSION['alerted']))
 					<button type="button" onclick="loadDoc_less()" value="g" class="btn btn-info" width="100%">View Less</button>
 				</div>
 				<div class="col-3">
-					<button type="button" onclick="loadDoc_all()" value="g" class="btn btn-info" width="100%">See all</button>
+					<button type="button" onclick="loadDoc_all()" value="g" class="btn btn-info" width="100%">See All</button>
 				</div>
 				<div class="col-3"></div>
 			</div>
