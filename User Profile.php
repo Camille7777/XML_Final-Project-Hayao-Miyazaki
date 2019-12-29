@@ -66,7 +66,6 @@
 
     padding: 0 0;
     background-color: rgba(189, 192, 186, 0.3);
-    font-family:
 }
 
 .text1 {

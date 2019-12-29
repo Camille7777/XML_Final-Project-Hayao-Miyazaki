@@ -76,27 +76,31 @@ if (isset($_POST['edit_psw']))
 }
 
 .footer-box {
-    
+
     padding: 0 0;
     background-color: rgba(189, 192, 186, 0.3);
-    font-family: 
+    font-family:
 }
 
-.text1{
-	font-family:Cinzel Decorative;
-	color:white;
-	font-size:auto;
-	font-weight:800;
-	letter-spacing:8px;
-	animation:textstretch 3s 1;
+.text1 {
+    font-family: Cinzel Decorative;
+    color: white;
+    font-size: auto;
+    font-weight: 800;
+    letter-spacing: 8px;
+    animation: textstretch 3s 1;
 }
 </style>
 
 <body class="body-bg-color">
-    <nav>
+    <div class="pos-f-t">
+        <nav>
+            <div class="btn">
+                Back
+            </div>
 
-
-    </nav>
+        </nav>
+    </div>
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-6 shadow bg-A5DEE4 p-3" style="font-weight:700;">
@@ -128,7 +132,9 @@ if (isset($_POST['edit_psw']))
 
 
     </div>
-    <div class="footer-box mt-5 p-4 text1" style="width: 100vw; color: black; animation: none;">
+
+    <div class="footer-box container-fluid mt-5 p-4 text1"
+        style="width: 100vw; color: black; animation: none; bottom: 0;">
         <div class="row my-auto">
             <div class="col-lg-12">
                 <footer>
@@ -139,6 +145,7 @@ if (isset($_POST['edit_psw']))
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
