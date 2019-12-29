@@ -274,6 +274,21 @@ a:hover, a:active, a:focus {
   left: 0;
 }
 
+.footer-box {
+        padding: 0 0;
+        background-color: rgba(189, 192, 186, 0.3);
+    }
+    
+ .text1 {
+        font-family: Cinzel Decorative;
+        color: white;
+        font-size: auto;
+        font-weight: 800;
+        letter-spacing: 8px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
   .timeline::before {
     left: 50px;
