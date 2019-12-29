@@ -1,0 +1,341 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: "Montserect",sans-serif;
+    background: #333
+}
+
+*{
+		padding:10px;
+		margin:0;
+}
+
+#topimg h1{
+    font-size: 200px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 20px;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    background: url(../../Resource/Photo/miyazaki_hayao/hiyao-miyazaki.jpg) 50% 50%;
+    background-size: cover;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+}
+
+.topsize div{
+    width: 1320px; 
+    height: 600px;
+}
+
+.row .col-md-6 img{
+    width:95%;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5); 
+    border-radius:30px;
+    background: #398983;
+}
+
+.card {
+		margin: 0;
+        left: 0;
+		border-radius: 25px;
+		background-color:#577C8A;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.5); 
+	} 
+
+.textin {
+	font-family:Crimson Text;
+	color:white;
+	font-size:auto;
+	font-weight:500;
+	letter-spacing:2px;
+    text-align: justify;
+	animation:textfloat 6s 1;
+}
+
+@keyframes textfloat{
+		0%{
+				opacity:0%;
+		}
+		20%{
+				opacity:30%;
+		}
+		85%{
+				opacity:100%;
+		}
+}
+
+/*timeline*/
+.timelist{
+    font-family:Cinzel Decorative;
+	color:white;
+	font-size:auto;
+	font-weight:800;
+	letter-spacing:8px;
+
+	animation:textfloat 6s 1;
+}
+
+section {
+  padding: 100px 0;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  background: #C5CAE9;
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #f5f5f5 transparent transparent;
+}
+
+.timeline-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-family:Cinzel Decorative;
+  background: #f5f5f5;
+  box-shadow: 0 20px 25px -15px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent #f5f5f5;
+}
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: #398983;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+
+a {
+  background: #398983;
+  color: #FFFFFF;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.6);
+}
+
+a:hover, a:active, a:focus {
+  background: #398983;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.timeline-card {
+  padding: 0 !important;
+}
+
+.timeline-card p {
+  padding: 0 20px;
+}
+
+.timeline-card a {
+  margin-left: 20px;
+}
+
+.timeline-item:nth-child(1) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/The-Castle-of-Cagliostro.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(2) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/Nausicaa-of-the-Valley-of-the-Wind.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(3) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/Castle-in-the-Sky.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(4) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/My-Neighbor-Totoro.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(5) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/Kikis-Delivery-Service.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(6) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/Porco-Rosso.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(7) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/Princess-Mononoke.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(8) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/Spirited-Away.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(9) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/Howls-Moving-Castle.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(10) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/Ponyo.jpg") center center no-repeat;
+  background-size: cover;
+}
+.timeline-item:nth-child(11) .timeline-img-header {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4)), url("https://gaijinpot.scdn3.secure.raxcdn.com/app/uploads/sites/4/2018/10/The-Wind-Rises.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.timeline-img-header {
+  height: 300px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.timeline-img-header h2 {
+  color: #FFFFFF;
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+}
+
+.date {
+  background: #eca579;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dateeven {
+  background: #398983;
+  display: inline-block;
+  color: #FFFFFF;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+  }
+    
+  .timeline .timeline-img {
+    left: 50px;
+  }
+    
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+    
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+    
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
+
+@media (max-width: 1350px) {
+  #topimg h1{
+    font-size: 150px;
+    font-weight: 900;
+}
+    
+  .topsize div{
+    width: 1320px; 
+    height: 580px;
+}
+
+}
+
+@media (max-width: 1100px) {
+  #topimg h1{
+    font-size: 100px;
+    font-weight: 1000;
+}
+}
+
+@media (max-width: 780px) {
+  #topimg h1{
+    font-size: 80px;
+    font-weight: 1200;
+}
+}
+
+@media (max-width: 720px) {
+  #topimg h1{
+    font-size: 50px;
+    font-weight: 1400;
+}
+}
