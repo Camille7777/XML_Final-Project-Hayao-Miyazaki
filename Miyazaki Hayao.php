@@ -8,24 +8,35 @@
               integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="CSS/Miyazaki/style_author.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Crimson+Text&display=swap" rel="stylesheet">
-    </head>
-
+		
+		<style>
+			a:link,a:active{
+				text-decoration:none;
+			}
+		</style>
+	
+	</head>
+	
     <body id="authorpage" style="background-color: #255359; overflow-x: hidden">
-        <div class="pos-f-t">
+		<div class="pos-f-t">
             <nav class="navbar navbar-dark">
                 <div class="btn-group" style="height: 80px;">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style="background-color: #FFC408">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-left">
-                        <button class="dropdown-item" type="button">Homepage</button>
-                        <button class="dropdown-item" type="button">Movie introduction</button>
-                        <button class="dropdown-item" type="button">Shop</button>
+                        <a class="dropdown-item" type="button" href="homepage.php">Homepage</a>
+						<a class="dropdown-item" type="button" href="Miyazaki Hayao.php">Miyazaki Hayao</a>
+                        <a class="dropdown-item" type="button" href="PrincessMononoke.php">Princess Mononoke</a>
+						<a class="dropdown-item" type="button" href="SpiritAway.php">Spirited Away</a>
+                        <a class="dropdown-item" type="button" href="surroundings.php">Shop</a>
                     </div>
                 </div>
 
             </nav>
         </div>
+		
+		
         <div class="container text-center">
             <div class="combines">
                 <div id="topimg" style="object-fit: cover; overflow: hidden">

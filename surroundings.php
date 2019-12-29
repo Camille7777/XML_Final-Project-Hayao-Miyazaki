@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+	session_start();
+?>
+
 <html>
 
 <head>
@@ -32,22 +35,36 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="dropdown-menu dropdown-menu-left">
-                    <button class="dropdown-item" type="button">Homepage</button>
-                    <button class="dropdown-item" type="button">Movie introduction</button>
-                    <button class="dropdown-item" type="button">Shop</button>
+                    <a class="dropdown-item" type="button" href="homepage.php">Homepage</a>
+					<a class="dropdown-item" type="button" href="Miyazaki Hayao.php">Miyazaki Hayao</a>
+                    <a class="dropdown-item" type="button" href="PrincessMononoke.php">Princess Mononoke</a>
+					<a class="dropdown-item" type="button" href="SpiritAway.php">Spirited Away</a>
+                    <a class="dropdown-item" type="button" href="surroundings.php">Shop</a>
                 </div>
             </div>
             <a href="#" style="margin-top: 1%;"><img src="Resource/Photo/jct/logo2%20(1).png"></a>
             <div class="btn-group">
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
                     data-display="static" aria-haspopup="true" aria-expanded="false" style="background-color: #FFC408">
-                    <span>TonyJct</span><span>&nbsp;&nbsp;</span>
+                    <span>
+						<?php
+							if(isset($_SESSION['username']))
+							{
+								$username = $_SESSION['username'];
+								echo $username;
+							}
+							else
+							{
+								echo "You have not log in";
+							}
+						?>
+					</span><span>&nbsp;&nbsp;</span>
                     <img class="button" style="width: 80px;" src="Resource/Photo/jct/27.jpg">
                 </button>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <button class="dropdown-item" type="button">My profile</button>
-                    <button class="dropdown-item" type="button">Shopping cart</button>
-                    <button class="dropdown-item" type="button">Log out</button>
+                    <a class="dropdown-item" type="button" href="User Profile.php">My profile</a>
+                    <a class="dropdown-item" type="button">Shopping cart</a>
+                    <a class="dropdown-item" type="button" <?php session_destroy()?> href="surroundings.php">Log out</a>
                 </div>
             </div>
 

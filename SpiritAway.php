@@ -37,6 +37,24 @@ if(isset($_SESSION['alerted']))
 	</head>
 	
 	<body>
+        <div class="pos-f-t">
+            <nav class="navbar navbar-dark">
+                <div class="btn-group" style="height: 80px;">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style="background-color: #FFC408">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-left">
+                        <a class="dropdown-item" type="button" href="homepage.php">Homepage</a>
+						<a class="dropdown-item" type="button" href="Miyazaki Hayao.php">Miyazaki Hayao</a>
+                        <a class="dropdown-item" type="button" href="PrincessMononoke.php">Princess Mononoke</a>
+						<a class="dropdown-item" type="button" href="SpiritAway.php">Spirited Away</a>
+                        <a class="dropdown-item" type="button" href="surroundings.php">Shop</a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>		
+	
 		<div class = "container text-center">
 			<div class = "row">
 				<div class="col-12">
