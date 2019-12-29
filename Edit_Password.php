@@ -43,6 +43,7 @@ if (isset($_POST['edit_psw']))
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Crimson+Text&display=swap" rel="stylesheet">
 
 </head>
 
@@ -77,8 +78,17 @@ if (isset($_POST['edit_psw']))
 .footer-box {
     
     padding: 0 0;
-    background-color: rgba(189, 192, 186, 0.6);
+    background-color: rgba(189, 192, 186, 0.3);
     font-family: 
+}
+
+.text1{
+	font-family:Cinzel Decorative;
+	color:white;
+	font-size:auto;
+	font-weight:800;
+	letter-spacing:8px;
+	animation:textstretch 3s 1;
 }
 </style>
 
@@ -118,7 +128,7 @@ if (isset($_POST['edit_psw']))
 
 
     </div>
-    <div class="footer-box mt-5 p-4" style="width: 100vw;">
+    <div class="footer-box mt-5 p-4 text1" style="width: 100vw; color: black; animation: none;">
         <div class="row my-auto">
             <div class="col-lg-12">
                 <footer>
