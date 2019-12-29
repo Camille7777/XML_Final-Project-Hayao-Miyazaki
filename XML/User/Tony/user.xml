@@ -1,0 +1,10 @@
+<?xml version = "1.0"?>
+<user>
+    <name>Tony</name>
+    <email>111111@qq.com</email>
+    <country>China</country>
+    <age>18</age>
+    <address>China</address>
+    <balance>4000</balance>
+    <password>33</password>
+</user>
