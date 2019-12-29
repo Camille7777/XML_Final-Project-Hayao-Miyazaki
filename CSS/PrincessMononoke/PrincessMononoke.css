@@ -1,5 +1,7 @@
-*{
-		margin:0;
+*:not(html):not(body)
+{
+	padding: 5px 5px;
+	margin:0;
 }
 
 .text1{
