@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 	<head>
 		<title>Princess Mononoke</title>
@@ -210,9 +209,17 @@
 					<button type="button" onclick="loadDoc_all()" value="g" class="btn btn-info" width="100%">See all</button>
 				</div>
 				<div class="col-3"></div>
-				<div id="demo"></div>
 			</div>
-						
+			
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div id="demo"></div>	
+				</div>
+				<div class="col-1"></div>
+			</div>
+			
+									
 						
 			<div class="row">
 				<div class="col-12">
@@ -252,13 +259,13 @@
 
 				var xmlDoc = xml.responseXML;
 				var x = xmlDoc.getElementsByTagName("info");
-				var table = "<table><tr><th>Name</th><th>Date</th><th>Comments</th></tr>";
+				var table = "<div class='row justify-content-center'><div class='col-12'>"+"<table><tr><th>Name</th><th>Date</th><th>Comments</th></tr>";
 				for(i = 0; i < x.length; i++) {
 						  table += '<tr><td>' + x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue + '</td><td>'
 									+ x[i].getElementsByTagName('date')[0].childNodes[0].nodeValue + '</td><td>'
 									+ x[i].getElementsByTagName('comment')[0].childNodes[0].nodeValue +'</td></tr>' ;
 				}
-				table += "</table>";
+				table += "</table></div></div>";
 				document.getElementById("demo").innerHTML = table;
 			}
 
