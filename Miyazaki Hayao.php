@@ -191,7 +191,7 @@
                 </div>
             </div>
         </div>
-        <!---<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>--->
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
         <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
         <script src="Resource/Photo/miyazaki_hayao/js/index.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
