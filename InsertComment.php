@@ -1,6 +1,11 @@
 <?php
+
 if (isset($_POST['insert']))
 {
+	//$_SESSION['filepath'] = basename(__FILE__);
+	//if(!isset($_SESSION['username']))
+	//	header('Location: LoginRegister.php');
+		
 	$xml = new DOMDocument("1.0");
 	$xmluser = new DOMDocument("1.0");
 	
@@ -8,7 +13,6 @@ if (isset($_POST['insert']))
 		echo $_POST['c_subject'];    // echo the choice
 	else
 	{
-		echo "nothing was selected.";
 		die;
 	}
 	
@@ -139,7 +143,9 @@ if (isset($_POST['insert']))
 
 				<div class="row">
 					<div class="col-12">
-						<center><button type = "submit" name="insert" value = "add" class="btn btn-info" width="100%">Submit</button><center>
+						<form action="InsertComment.php" method="POST">
+							<center><button type = "submit" name="insert" value = "add" class="btn btn-info" width="100%">Submit</button><center>
+						</form>
 					</div>
 				</div>
 			</div>
