@@ -1,0 +1,123 @@
+.auto            { cursor: auto; }
+.default         { cursor: default; }
+.none            { cursor: none; }
+.context-menu    { cursor: context-menu; }
+.help            { cursor: help; }
+.pointer         { cursor: pointer; }
+.progress        { cursor: progress; }
+.wait            { cursor: wait; }
+.cell            { cursor: cell; }
+.crosshair       { cursor: crosshair; }
+.text            { cursor: text; }
+.vertical-text   { cursor: vertical-text; }
+.alias           { cursor: alias; }
+.copy            { cursor: copy; }
+.move            { cursor: move; }
+.no-drop         { cursor: no-drop; }
+.not-allowed     { cursor: not-allowed; }
+.all-scroll      { cursor: all-scroll; }
+.col-resize      { cursor: col-resize; }
+.row-resize      { cursor: row-resize; }
+.n-resize        { cursor: n-resize; }
+.e-resize        { cursor: e-resize; }
+.s-resize        { cursor: s-resize; }
+.w-resize        { cursor: w-resize; }
+.ns-resize       { cursor: ns-resize; }
+.ew-resize       { cursor: ew-resize; }
+.ne-resize       { cursor: ne-resize; }
+.nw-resize       { cursor: nw-resize; }
+.se-resize       { cursor: se-resize; }
+.sw-resize       { cursor: sw-resize; }
+.nesw-resize     { cursor: nesw-resize; }
+.nwse-resize     { cursor: nwse-resize; }
+.module {
+    cursor: url('https://vignette.wikia.nocookie.net/studio-ghibli/images/4/49/Cursor1.png'), pointer !important;
+}
+.module2 {
+    cursor: url('Resource/Photo/jct/frame-1.png'), auto;
+}
+
+body {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+.cursors {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cursors > div {
+    flex: 150px;
+    padding: 10px 2px;
+    white-space: nowrap;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin: 0 5px 5px 0;
+}
+.cursors > div:hover {
+    background: #eee;
+}
+#playground{
+    width: 100%;
+    height: 100px;
+    border: 1px solid grey;
+    animation: animate 0.25s infinite;
+}
+
+@keyframes animate{
+    0%{ 
+        cursor: url("http://jantimon.nl/running_man/running_man_1.png"), auto;
+    }
+    20%{ 
+        cursor: url("http://jantimon.nl/running_man/running_man_2.png"), auto;
+    }
+    40%{ 
+        cursor: url("http://jantimon.nl/running_man/running_man_3.png"), auto;
+    }
+    60%{ 
+        cursor: url("http://jantimon.nl/running_man/running_man_4.png"), auto;
+    }
+    80%{ 
+        cursor: url("http://jantimon.nl/running_man/running_man_5.png"), auto;
+    }
+    100%{ 
+        cursor: url("http://jantimon.nl/running_man/running_man_1.png"), auto;
+    }
+}
+
+
+@media (max-width: 1350px) {
+
+    .btn-group{
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .btn-group{
+        height: 30px;
+    }
+
+
+}
+@media (max-width: 780px) {
+
+    .btn-group{
+        height: 30px;
+    }
+
+
+
+@media (max-width: 720px) {
+    .btn-group{
+        height: 30px;
+    }
+
+
+    #containers div {
+        min-width: 1350px;
+        width:expression(document.body.clientWidth < 1350? "1350px": "auto" );
+    } 
+
