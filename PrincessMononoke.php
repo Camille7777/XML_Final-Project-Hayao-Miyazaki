@@ -118,7 +118,6 @@
 				</div>
 			</div>
 			
-			
 			<br><br>
 			
 			<div class="row">
@@ -195,10 +194,88 @@
 					</div>
 				</div>
 			</div>
+			
+			<div class="row">
+				<div class="col-12">
+					<h3 class="text3">Comment</h3>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-3"></div>
+				<div class="col-3">
+					<button type="button" onclick="loadDoc_less()" value="g" class="btn btn-info" width="100%">View Less</button>
+				</div>
+				<div class="col-3">
+					<button type="button" onclick="loadDoc_all()" value="g" class="btn btn-info" width="100%">See all</button>
+				</div>
+				<div class="col-3"></div>
+				<div id="demo"></div>
+			</div>
+						
+						
+			<div class="row">
+				<div class="col-12">
+					<?php require ('InsertComment.php');?>
+				</div>
+			</div>
 		</div>
-	
-	
-	
+
+
+
+		<script>
+		//view comments
+			var i = 0;
+			function loadDoc_all() {
+			  var xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+				  myFunction_all(this,i);
+				}
+			  };
+			  xhttp.open("GET", "XML/Comment/PageComment/PMcomment.xml", true);
+			  xhttp.send();
+			}
+
+			function loadDoc_less() {
+			  var xhttp = new XMLHttpRequest();
+			  xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+				  myFunction_less(this,i);
+				}
+			  };
+			  xhttp.open("GET", "XML/Comment/PageComment/PMcomment.xml", true);
+			  xhttp.send();
+			}
+
+			function myFunction_all(xml, i){
+
+				var xmlDoc = xml.responseXML;
+				var x = xmlDoc.getElementsByTagName("info");
+				var table = "<table><tr><th>Name</th><th>Date</th><th>Comments</th></tr>";
+				for(i = 0; i < x.length; i++) {
+						  table += '<tr><td>' + x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue + '</td><td>'
+									+ x[i].getElementsByTagName('date')[0].childNodes[0].nodeValue + '</td><td>'
+									+ x[i].getElementsByTagName('comment')[0].childNodes[0].nodeValue +'</td></tr>' ;
+				}
+				table += "</table>";
+				document.getElementById("demo").innerHTML = table;
+			}
+
+			function myFunction_less(xml, i){
+
+				var xmlDoc = xml.responseXML;
+				var x = xmlDoc.getElementsByTagName("info");
+				var table = "<table><tr><th>Name</th><th>Date</th><th>Comments</th></tr>";
+				for(i = 0; i < 2; i++) {
+						  table += '<tr><td>' + x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue + '</td><td>'
+									+ x[i].getElementsByTagName('date')[0].childNodes[0].nodeValue + '</td><td>'
+									+ x[i].getElementsByTagName('comment')[0].childNodes[0].nodeValue +'</td></tr>' ;
+				}
+				table += "</table>";
+				document.getElementById("demo").innerHTML = table;
+			}
+		</script>	
 		
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

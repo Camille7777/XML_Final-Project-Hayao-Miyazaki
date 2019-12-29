@@ -11,7 +11,7 @@
             if($password == $xml->password){  // if the password correct
                 session_start();                //
                 $_SESSION['username'] = $username;    //user's session start
-                header('Location: User Profile.html');     // open index.php
+                header('Location: User Profile.php');     // open index.php
                 die;
             }
             else
@@ -83,7 +83,7 @@
             $xml->addChild('balance', '4000');  // in xml 
             $xml->addChild('password', $password);    // add password to xml
             $xml->asXML('./XML/User/'.$username.'/user.xml');   // save as xml file 
-            header('Location: User Profile.html');                // go to login
+            header('Location: User Profile.php');                // go to login
             
             die;
         }

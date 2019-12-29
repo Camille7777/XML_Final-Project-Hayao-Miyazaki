@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <info>
+    <name>Jenny</name>
+	<date>2019.09.09</date>
+    <comment>Such a touching movie!</comment>
+  </info>
+  <info>
+    <name>Emily</name>
+	<date>2019.11.11</date>
+    <comment> This movie shows the beauty and the ugliness of human nature.I love it!</comment>
+  </info>
+  <info>
+    <name>Jackson</name>
+	<date>2019.10.11</date>
+    <comment>"Things that have passed will not be forgotten. I am just unable to remember."</comment>
+  </info>
+</root>
