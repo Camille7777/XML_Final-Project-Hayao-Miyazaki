@@ -12,9 +12,7 @@ session_start();
         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Crimson+Text&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="my.css">
 		<style>
-			a:link,a:active{
-				text-decoration:none;
-			}
+
 		</style>
 	
 	</head>
@@ -37,8 +35,7 @@ session_start();
 
             </nav>
         </div>
-		
-		
+				
         <div class="container text-center">
             <div class="combines">
                 <div id="topimg" style="object-fit: cover; overflow: hidden">
@@ -193,6 +190,7 @@ session_start();
                 </div>
             </div>
         </div>
+		
         <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
         <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
         <script src="Resource/Photo/miyazaki_hayao/js/index.js"></script>

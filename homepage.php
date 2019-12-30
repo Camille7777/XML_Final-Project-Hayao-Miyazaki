@@ -28,13 +28,12 @@
 }
 </style>
 
-<body class="module"
-    style="background:url(Resource/Photo/jct/18.jpeg);  background-size:cover; background-repeat: no-repeat;">
+<body class="module" style="background:url(Resource/Photo/jct/18.jpeg);background-position:center; background-size:cover; background-repeat: no-repeat;">
 
     <nav class="navbar navbar-dark">
         <div class="btn-group">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static"
-                aria-haspopup="true" aria-expanded="false" style="background-color:#A8D8B9;">
+                aria-haspopup="true" aria-expanded="false" style="background-color:#A5DEE4;">
                 <span class="navbar-toggler-icon" style="height: 30px; width: 30px;"></span>
             </button>
             <div class="dropdown-menu dropdown-menu-left">
@@ -49,7 +48,7 @@
         <a href="#" style="margin-top: 1%;"><img src="Resource/Photo/jct/logo2%20(1).png"></a>
         <div class="btn-group">
             <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static"
-                aria-haspopup="true" aria-expanded="false" style="background-color: #A8D8B9">
+                aria-haspopup="true" aria-expanded="false" style="background-color: #A5DEE4">
                 <span>
                     <?php
 							if(isset($_SESSION['username']))

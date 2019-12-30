@@ -136,20 +136,8 @@ if (isset($_POST['edit_psw']))
             integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 
+		
 
-    </div>
-
-    <div class="footer-box container-fluid mt-5 p-4 text1"
-        style="width: 100vw; color: black; animation: none; bottom: 0;">
-        <div class="row my-auto">
-            <div class="col-lg-12">
-                <footer>
-                    <div id="tail-Logo" class="text-center">
-                        <h3>Hayao Miyazaki</h3>
-                    </div>
-                </footer>
-            </div>
-        </div>
     </div>
 
 </body>

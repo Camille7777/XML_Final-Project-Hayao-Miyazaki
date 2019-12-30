@@ -28,59 +28,59 @@ if (isset($_POST['insert']))
         $NewFileName = 'XML/Comment/' . $cname . '.xml';
 		$NewFileHandle = fopen($NewFileName,'w');
 		$txt = '<?xml version="1.0" encoding="UTF-8"?><root></root>';
-fwrite($NewFileHandle,$txt);
-fclose($NewFileHandle);
-}
+		fwrite($NewFileHandle,$txt);
+		fclose($NewFileHandle);
+	}
 
-$xmluser->load('./XML/Comment/' . $cname . '.xml');
-$u_rootTag = $xmluser->getElementsByTagName("root")->item(0);
+	$xmluser->load('./XML/Comment/' . $cname . '.xml');
+	$u_rootTag = $xmluser->getElementsByTagName("root")->item(0);
 
-$u_infoTag = $xmluser->createElement("info");
-$u_subjectTag = $xmluser->createElement("subject", $csubject);
-$u_dateTag = $xmluser->createElement("date", $cdate);
-$u_commentTag = $xmluser->createElement("comment", $ccomment);
+	$u_infoTag = $xmluser->createElement("info");
+	$u_subjectTag = $xmluser->createElement("subject", $csubject);
+	$u_dateTag = $xmluser->createElement("date", $cdate);
+	$u_commentTag = $xmluser->createElement("comment", $ccomment);
 
-$u_infoTag->appendChild($u_subjectTag);
-$u_infoTag->appendChild($u_dateTag);
-$u_infoTag->appendChild($u_commentTag);
+	$u_infoTag->appendChild($u_subjectTag);
+	$u_infoTag->appendChild($u_dateTag);
+	$u_infoTag->appendChild($u_commentTag);
 
-$u_rootTag->appendChild($u_infoTag);
+	$u_rootTag->appendChild($u_infoTag);
 
-$xmluser->save('./XML/Comment/' . $cname . '.xml');
+	$xmluser->save('./XML/Comment/' . $cname . '.xml');
 
-//check which subject users are commented
-if($csubject == "Princess Mononoke")
-{
-$xml->load('./XML/Comment/PageComment/PMcomment.xml');
-}
-else if($csubject == "Spirit Away")
-{
-$xml->load('./XML/Comment/PageComment/SAcomment.xml');
-}
+	//check which subject users are commented
+	if($csubject == "Princess Mononoke")
+	{
+		$xml->load('./XML/Comment/PageComment/PMcomment.xml');
+	}
+	else if($csubject == "Spirit Away")
+	{
+		$xml->load('./XML/Comment/PageComment/SAcomment.xml');
+	}
 
-$rootTag = $xml->getElementsByTagName("root")->item(0);
+	$rootTag = $xml->getElementsByTagName("root")->item(0);
 
-$infoTag = $xml->createElement("info");
-$nameTag = $xml->createElement("name", $cname);
-$dateTag = $xml->createElement("date", $cdate);
-$commentTag = $xml->createElement("comment", $ccomment);
+	$infoTag = $xml->createElement("info");
+	$nameTag = $xml->createElement("name", $cname);
+	$dateTag = $xml->createElement("date", $cdate);
+	$commentTag = $xml->createElement("comment", $ccomment);
 
-$infoTag->appendChild($nameTag);
-$infoTag->appendChild($dateTag);
-$infoTag->appendChild($commentTag);
+	$infoTag->appendChild($nameTag);
+	$infoTag->appendChild($dateTag);
+	$infoTag->appendChild($commentTag);
 
-$rootTag->appendChild($infoTag);
+	$rootTag->appendChild($infoTag);
 
-if($csubject == "Princess Mononoke")
-{
-$xml->save('./XML/Comment/PageComment/PMcomment.xml');
-}
-else if($csubject == "Spirit Away")
-{
-$xml->save('./XML/Comment/PageComment/SAcomment.xml');
-}
-$_SESSION['message'] = 'You have add comment sucessfully';
-$_SESSION['alerted'] = 1;
+	if($csubject == "Princess Mononoke")
+	{
+		$xml->save('./XML/Comment/PageComment/PMcomment.xml');
+	}
+	else if($csubject == "Spirit Away")
+	{
+		$xml->save('./XML/Comment/PageComment/SAcomment.xml');
+	}
+	$_SESSION['message'] = 'You have add comment sucessfully';
+	$_SESSION['alerted'] = 1;
 }
 ?>
 
