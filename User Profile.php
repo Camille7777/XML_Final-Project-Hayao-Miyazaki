@@ -10,8 +10,8 @@
 			}
 			$_SESSION['alerted'] = 0;
 		}
-	}	
-	if(!isset($_SESSION['username']))
+    }
+    if(!isset($_SESSION['username']))
 		header('Location: LoginRegister.php');
 ?>
 <html>

@@ -1,5 +1,5 @@
 <?php
-	session_start();
+    session_start();
 ?>
 <html>
 
@@ -45,13 +45,13 @@
                 <a class="dropdown-item" type="button" href="surroundings.php">Shop</a>
             </div>
         </div>
-		
-		<a href="#" style="margin-top: 1%;"><img src="Resource/Photo/jct/logo2%20(1).png"></a>
-            <div class="btn-group">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                    data-display="static" aria-haspopup="true" aria-expanded="false" style="background-color: #A8D8B9">
-                    <span>
-						<?php
+
+        <a href="#" style="margin-top: 1%;"><img src="Resource/Photo/jct/logo2%20(1).png"></a>
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static"
+                aria-haspopup="true" aria-expanded="false" style="background-color: #A8D8B9">
+                <span>
+                    <?php
 							if(isset($_SESSION['username']))
 							{
 								$username = $_SESSION['username'];
@@ -62,15 +62,17 @@
 								echo "You have not log in";
 							}
 						?>
-					</span><span>&nbsp;&nbsp;</span>
-                    <img class="button" style="width: 80px;" src="Resource/Photo/jct/27.jpg">
-                </button>
-                <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" type="button" href="User Profile.php">My profile</a>
-                    <a class="dropdown-item" type="button" href="Loginregister.php">Log in</a>
-                    <a class="dropdown-item" type="button" <?php session_destroy()?> href="homepage.php">Log out</a>
-                </div>
+                </span><span>&nbsp;&nbsp;</span>
+                <img class="button" style="width: 80px;" src="Resource/Photo/jct/27.jpg">
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" type="button" href="User Profile.php">My profile</a>
+                <a class="dropdown-item" type="button" href="Loginregister.php">Log in</a>
+                <a class="dropdown-item" type="button" id="logout" onclick="logout()" href="">
+                    <div id="logout_div"></div>Log out
+                </a>
             </div>
+        </div>
 
     </nav>
 
@@ -298,6 +300,14 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+
+    </script>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    function logout() {
+        $.get("./logout.php")
+        alert('logout');
+    }
     </script>
 </body>
 
