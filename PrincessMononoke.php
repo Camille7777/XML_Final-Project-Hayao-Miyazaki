@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/PrincessMononoke/PrincessMononoke.css">
 
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="my.css">
     <style>
     body {
         background: #255359
@@ -42,7 +43,7 @@
     </style>
 </head>
 
-<body>
+<body class="module">
         <div class="pos-f-t">
             <nav class="navbar navbar-dark">
                 <div class="btn-group" style="height: 80px;">

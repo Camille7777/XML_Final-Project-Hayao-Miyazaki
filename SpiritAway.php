@@ -22,7 +22,7 @@ if(isset($_SESSION['alerted']))
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="CSS/SpiritAway/SpiritAway.css">
-		
+		<link rel="stylesheet" href="my.css">
 		<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Crimson+Text&display=swap" rel="stylesheet">
 		<style>
 			body
@@ -36,7 +36,7 @@ if(isset($_SESSION['alerted']))
 		</style>
 	</head>
 	
-	<body>
+	<body class="module">
         <div class="pos-f-t">
             <nav class="navbar navbar-dark">
                 <div class="btn-group" style="height: 80px;">

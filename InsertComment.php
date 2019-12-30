@@ -88,7 +88,7 @@ $_SESSION['alerted'] = 1;
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="CSS/PrincessMononoke/PrincessMononoke.css">
-
+<link rel="stylesheet" href="my.css">
 <style>
 .bg-A5DEE4 {
     /*background-color: rgba(252, 159, 77, 0.5);*/
@@ -115,7 +115,7 @@ $_SESSION['alerted'] = 1;
 }
 </style>
 
-<body>
+<body class="module">
     <div class="row justify-content-center">
         <div class="col-lg-8 shadow myshadow rounded  bg-A5DEE4">
             <h4 class="text3"><label>Write your own comments</label></h6>

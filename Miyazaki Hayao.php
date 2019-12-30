@@ -10,7 +10,7 @@ session_start();
               integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="CSS/Miyazaki/style_author.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Crimson+Text&display=swap" rel="stylesheet">
-		
+		<link rel="stylesheet" href="my.css">
 		<style>
 			a:link,a:active{
 				text-decoration:none;
@@ -19,7 +19,7 @@ session_start();
 	
 	</head>
 	
-    <body id="authorpage" style="background-color: #255359; overflow-x: hidden">
+    <body class="module" id="authorpage" style="background-color: #255359; overflow-x: hidden">
 		<div class="pos-f-t">
             <nav class="navbar navbar-dark">
                 <div class="btn-group" style="height: 80px;">
