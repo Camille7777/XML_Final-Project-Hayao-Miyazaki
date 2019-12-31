@@ -28,7 +28,8 @@
 }
 </style>
 
-<body class="module" style="background:url(Resource/Photo/jct/18.jpeg);background-position:center; background-size:cover; background-repeat: no-repeat;">
+<body class="module"
+    style="background:url(Resource/Photo/jct/18.jpeg);  background-size:cover; background-repeat: no-repeat; background-position: center;">
 
     <nav class="navbar navbar-dark">
         <div class="btn-group">

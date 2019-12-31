@@ -1,9 +1,11 @@
+console.log('123');
+
 $(function(){
 
   window.sr = ScrollReveal();
-
+  console.log('Hi_1');
   if ($(window).width() < 768) {
-
+	console.log('small');
   	if ($('.timeline-content').hasClass('js--fadeInLeft')) {
   		$('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
   	}
@@ -16,7 +18,7 @@ $(function(){
 	  });
 
   } else {
-  	
+  	console.log('big');
   	sr.reveal('.js--fadeInLeft', {
 	    origin: 'left',
 	    distance: '300px',
@@ -32,7 +34,7 @@ $(function(){
 	  });
 
   }
-  
+  console.log('Hi');
   sr.reveal('.js--fadeInLeft', {
 	    origin: 'left',
 	    distance: '300px',
